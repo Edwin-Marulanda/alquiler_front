@@ -11,3 +11,107 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  background-image: url('/src/assets/back/back_init.jpg');
+}
+
+#texto-inicio p {
+
+  font-size: 2.2rem;
+  font-family: "Courier New";
+  font-weight: bold;
+  color: #ffffff;
+  border-right: .15em solid #cbe3ea;
+  animation: blink 1s steps(1) infinite;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.border-input {
+  border-color: 6px #5063f4;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(117, 13, 253, 0.288);
+  background-color: #6549a778;
+  color: #ffffff;
+}
+
+.border-input:focus {
+
+  box-shadow: 0 0 0 0.25rem rgba(117, 13, 253, 0.288);
+  background-color: #6549a778;
+  color: #ffffff;
+}
+
+::placeholder {
+  color: rgba(188, 185, 185, 0.538) !important;
+  opacity: 1;
+}
+
+.btn-backcolor {
+  background-color: #8f8cfedb;
+  color: #ffffff;
+  width: 100%;
+}
+
+.btn-backcolor:hover {
+  background-color: #7470f7db;
+  color: #ffffff;
+  width: 100%;
+}
+
+.notificaion {
+  color: white;
+  position: absolute;
+  border-radius: 50%;
+  font-size: 14px;
+  background-color: #5063f4;
+  width: 17px;
+  height: 17px;
+  right: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text-size {
+  font-size: 0.8rem !important;
+}
+
+.st-valor {
+  position: absolute;
+  top: 147px;
+  font-size: 26px;
+  right: 71px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.text-not{
+  color: red;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  transform: rotate(305deg);
+  top: 64px;
+
+}
